@@ -1,5 +1,5 @@
 <?php
-include_once '../../config.ini';
+include_once 'connexionDb.php';
 
 /* Insertion des données entrées dans le formulaire, dans la Database */
 
@@ -17,6 +17,10 @@ if(isset($_POST['submit']))
      $commentaire_client = $_POST['commentaire_client'];
      $sql = "INSERT INTO clients (raison_sociale,adresse_client,code_postal_client,ville_client,ca,effectif,telephone_client,type_client,nature_client,commentaire_client)
      VALUES ('$raison_sociale','$adresse_client','$code_postal_client','$ville_client','$ca','$effectif','$telephone_client','$type_client','$nature_client','$commentaire_client')";
+     
+     /* Problème de foreign key avec la table secteur_activite */
+     /* Recherche de solution à base de: INSERT INTO secteur_activite (activite) VALUES ('$activite') */
+
      if (mysqli_query($conn, $sql)) {
         echo "New record has been added successfully !";
      } else {
