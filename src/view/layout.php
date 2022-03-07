@@ -29,7 +29,7 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a href="#" id="pull-left" class="aurelie">aaaaa</a>
+      <a href="#" id="pull-left" style="background-image: url('http://localhost/groupe2minicrm-main/public/assets/images/Logo-abi.png'); height:500px; width:500px"></a>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
