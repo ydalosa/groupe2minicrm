@@ -43,15 +43,17 @@ class Router
 
         foreach ($this->actions as $action) {
             // la route match without variables
-            $exploded_defined_path = explode("/", $action['path']);
+            
 
             if ($request_without_base_uri == $action['path']) {
-
+                  
                 $this->runWithExactMatch($action['callback']);
                 return;
             }
         }
         foreach ($this->actions as $action) {
+            $exploded_defined_path = explode("/", $action['path']);
+
             if (count($exploded_defined_path) == count($exploded_request_uri)) {
 
                 if (count(array_intersect($exploded_defined_path, $exploded_request_uri)) > 1) {
