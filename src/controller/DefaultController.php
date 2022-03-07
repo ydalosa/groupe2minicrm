@@ -24,6 +24,12 @@ class DefaultController extends Controller
 
         $this->renderView('default/about');
        
-    } 
+    }
+    public function form(){
+        //...
+
+        $this->renderView('default/form');
+       
+    }  
    
 }
