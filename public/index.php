@@ -23,7 +23,7 @@ $router->register('/', '\App\controller\DefaultController::accueil');
 $router->register('/contact', '\App\controller\DefaultController::contact');
 $router->register('/about', '\App\controller\DefaultController::about');
 $router->register('/form', '\App\controller\DefaultController::form');
-$router->register('/form', '\App\controller\DefaultController::login');
+$router->register('/login', '\App\controller\DefaultController::login');
 /************ /Routes *************/
 $router->run();
 
