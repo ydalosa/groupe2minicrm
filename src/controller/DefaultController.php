@@ -30,6 +30,13 @@ class DefaultController extends Controller
 
         $this->renderView('default/form');
        
-    }  
-   
+    }
+
+    public function form(){
+        //...
+
+        $this->renderView('default/login');
+
+    }
+
 }
