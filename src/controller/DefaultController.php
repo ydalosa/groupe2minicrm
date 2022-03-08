@@ -32,7 +32,7 @@ class DefaultController extends Controller
        
     }
 
-    public function form(){
+    public function login(){
         //...
 
         $this->renderView('default/login');
