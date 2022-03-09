@@ -23,8 +23,13 @@
                     <div class="page-header">
                         <h2>Création de compte client</h2>
                     </div>
-                    <p>Entrez les données du client</p>
-                    <form action="insert.php" method="post">
+                    <p>Veuillez entrer les données du client dans le formulaire suivant:</p>
+    </br>
+                    <form method="post">
+                        <div class="form-group">
+                            <label>Indicatif du secteur d'activité (Nombre)</label>
+                            <input type="text" name="id_sect" class="form-control">
+                        </div>
                         <div class="form-group">
                             <label>Raison sociale</label>
                             <input type="text" name="raison_sociale" class="form-control">
@@ -42,11 +47,11 @@
                             <input type="ville_client" name="ville_client" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label>CA</label>
+                            <label>CA (Nombre)</label>
                             <input type="ca" name="ca" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label>Effectif</label>
+                            <label>Effectif (Nombre)</label>
                             <input type="effectif" name="effectif" class="form-control">
                         </div>
                         <div class="form-group">
@@ -65,6 +70,7 @@
                             <label>Ajouter un commentaire au client</label>
                             <input type="commentaire" name="commentaire_client" class="form-control">
                         </div>
+    </br>
                         <input type="submit" class="btn btn-primary" name="submit" value="Envoyer">
                     </form>
                 </div>
