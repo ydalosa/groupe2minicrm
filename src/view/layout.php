@@ -9,27 +9,29 @@
   <title>CRM</title>
 
   <!-- Bootstrap CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="<?= $_SERVER["REQUEST_SCHEME"].'://'.$_SERVER["HTTP_HOST"]. BASE_URI ?>/public/assets/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/one-page-wonder.min.css" rel="stylesheet">
+  <link href="<?= $_SERVER["REQUEST_SCHEME"].'://'.$_SERVER["HTTP_HOST"]. BASE_URI ?>/public/assets/css/one-page-wonder.min.css" rel="stylesheet">
 
 </head>
 
 <body>
 
   <!-- Navigation -->
+ 
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">CRM</a>
+      <img id='pull-left' src="./public/assets/images/Logo-abi.png"></img>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a href="#" class="pull-left"><img src="/images/Logo-abi.png"></a>
+     
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
@@ -63,9 +65,9 @@
     <div class="bg-circle-4 bg-circle"></div>
   </header>
 
-
-  <!--Actualités-->
-  <div class="divider-custom divider-light">
+  <!-- lllllllllllllllllllllllll -->
+   <!--Actualités-->
+   <div class="divider-custom divider-light">
     <div class="divider-custom-line"></div>
     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
     <div class="divider-custom-line"></div>
@@ -78,7 +80,7 @@
 
       <br>
       <div class="row">
-        <p class="align-center"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? <br>
+        <p class ="align-center"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? <br>
           <br>
         </p>
 
@@ -179,21 +181,21 @@
                   </div>
                 </div>
 
-                <!--deuxième option voir Formulaire de contact\-Voir page formulaire.php-->
+                <!--deuxième option voir Formulaire de contact--Voir page formulaire.php-->
 
 
 
-                <!-- Footer -->
-                <footer class="py-5 bg-black">
-                  <div class="container">
-                    <p class="m-0 text-center text-white small">Copyright &copy; CRM 2022 Groupe 2</p>
-                  </div>
-                  <!-- /.container -->
-                </footer>
 
-                <!-- Bootstrap  JavaScript -->
-                <script src="js/jquery.min.js"></script>
-                <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Footer -->
+  <footer class="py-5 bg-black">
+    
+      <p class="m-0 text-center text-white small">Copyright &copy; CRM 2022 Groupe 2</p>
+    
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap  JavaScript -->
+  
 
 </body>
 
