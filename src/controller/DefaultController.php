@@ -97,5 +97,44 @@ class DefaultController extends Controller
         $this->renderView('default/connexion');
 
     }
+    public function user(){
+
+        /* Connexion Database */
+
+    $servername='localhost';
+    $username='root';
+    $password='';
+    $dbname = "groupe2minicrm";
+    $conn=mysqli_connect($servername,$username,$password,"$dbname");
+      if(!$conn){
+          die('Could not Connect MySql Server:');
+        }
+
+/* Equivalent au fichier config.ini */
+
+
+        /* Insertion des données entrées dans le formulaire, dans la Database */
+        
+        if(isset($_POST['submit']))
+        {    
+             $login_user = $_POST['login_user'];
+             $pass_user = $_POST['pass_user'];
+             $rol = $_POST['rol'];
+             $sql = "INSERT INTO users (login_user,pass_user,rol)
+             VALUES ('$login_user','$pass_user','$rol')";
+             
+             /* Envoi des données à la BDD */
+        
+             if (mysqli_query($conn, $sql)) {
+                echo "Votre compte a été créé !";
+             } else {
+                echo "Error: " . $sql . ":-" . mysqli_error($conn);
+             }
+             mysqli_close($conn);
+        }
+
+        $this->renderView('default/user');
+
+    }
 
 }
