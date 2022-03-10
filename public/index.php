@@ -27,7 +27,7 @@ $router->register('/login', '\App\controller\DefaultController::login');
 $router->register('/dashboard', '\App\controller\DefaultController::dashboard');
 $router->register('/news', '\App\controller\DefaultController::news');
 $router->register('/connexion', '\App\controller\DefaultController::connexion');
-
+$router->register('/user', '\App\controller\DefaultController::user');
 /************ /Routes *************/
 $router->run();
 
