@@ -85,4 +85,17 @@ class DefaultController extends Controller
 
     }
 
+    public function news(){
+        //...
+
+        $this->renderView('default/news');
+
+    }
+    public function connexion(){
+        //...
+
+        $this->renderView('default/connexion');
+
+    }
+
 }

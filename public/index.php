@@ -25,6 +25,9 @@ $router->register('/about', '\App\controller\DefaultController::about');
 $router->register('/form', '\App\controller\DefaultController::form');
 $router->register('/login', '\App\controller\DefaultController::login');
 $router->register('/dashboard', '\App\controller\DefaultController::dashboard');
+$router->register('/news', '\App\controller\DefaultController::news');
+$router->register('/connexion', '\App\controller\DefaultController::connexion');
+
 /************ /Routes *************/
 $router->run();
 
