@@ -4,7 +4,7 @@
         <div class="container">
             <h1 class="masthead-heading mb-0">CRM</h1>
             <h2 class="masthead-subheading mb-0">ABI</h2>
-            <a href="registration.php" class="btn btn-primary btn-xl rounded-pill mt-5">Se Connecter</a>
+            <a href="login.php" class="btn btn-primary btn-xl rounded-pill mt-5">Se Connecter</a>
         </div>
     </div>
     <div class="bg-circle-1 bg-circle"></div>
