@@ -103,7 +103,7 @@ class DefaultController extends Controller
 
     $servername='localhost';
     $username='root';
-    $password='';
+    $password='root';
     $dbname = "groupe2minicrm";
     $conn=mysqli_connect($servername,$username,$password,"$dbname");
       if(!$conn){
