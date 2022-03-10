@@ -24,6 +24,7 @@ $router->register('/contact', '\App\controller\DefaultController::contact');
 $router->register('/about', '\App\controller\DefaultController::about');
 $router->register('/form', '\App\controller\DefaultController::form');
 $router->register('/login', '\App\controller\DefaultController::login');
+$router->register('/dashboard', '\App\controller\DefaultController::dashboard');
 /************ /Routes *************/
 $router->run();
 

@@ -13,6 +13,12 @@ class DefaultController extends Controller
         $this->renderView('default/accueil');
        
     } 
+    public function dashboard(){
+        //...
+
+        $this->renderView('default/dashboard');
+       
+    }
     public function contact(){
         //...
 
