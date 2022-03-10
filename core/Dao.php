@@ -136,14 +136,53 @@ final class Dao
         return self::$cnx->lastInsertId();
     }
 
-    // TODO
-    public static function edit()
+    public static function edit(string $className, array $args, array $criteria) : bool
     {
+        $classNameLower = strtolower($className);
+        $classNameLower = explode("\\", $classNameLower);
+        $classNameLower = end($classNameLower);
+
+        $sql = "UPDATE {$classNameLower} SET ";
+
+        foreach (array_keys($args) as $key => $value) {
+            $sql .= $value . ' = :' . $value;
+            if ($key < count($args) - 1) {
+                $sql .= ' , ';
+            }
+        }
+
+        $sql .= ' WHERE '.array_key_first($criteria)." = :".array_key_first($criteria);
+        /**
+         * @var \PDOStatement $stmt
+         */
+        $stmt = self::$cnx->prepare($sql);
+        return $stmt->execute(array_merge($args, $criteria));
 
     }
-     public static function delete()
-    {
 
+    /**
+     * @param string $className nom de la classe
+     * @param array $args les critères de l'élément à supprimer
+     * @return bool true si la suppression a été effectuée si non false
+     */
+    public static function delete(string $className, array $args): bool
+    {
+        $classNameLower = strtolower($className);
+        $classNameLower = explode("\\", $classNameLower);
+        $classNameLower = end($classNameLower);
+
+        $sql = "DELETE FROM `{$classNameLower}` WHERE ";
+
+        foreach (array_keys($args) as $key => $value) {
+            $sql .= $value . ' = :' . $value;
+            if ($key < count($args) - 1) {
+                $sql .= ' AND ';
+            }
+        }
+
+        $stmt = self::$cnx->prepare($sql);
+
+        return $stmt->execute($args);
     }
 
 }
