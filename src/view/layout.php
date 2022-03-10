@@ -65,6 +65,10 @@
     <div class="bg-circle-4 bg-circle"></div>
   </header>
 
+  <main class="container">
+      <?= $content ?>
+  </main>
+
   <!-- lllllllllllllllllllllllll -->
    <!--Actualités-->
    <div class="divider-custom divider-light">
