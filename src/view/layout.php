@@ -22,6 +22,9 @@
           rel="stylesheet">
 
 </head>
+    
+    
+<!--  TODO Patric vérifie celui la stp-->
 
 <body>
 
