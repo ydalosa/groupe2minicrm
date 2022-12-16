@@ -24,8 +24,15 @@
 </head>
     
     
+    
+    
+    
 <!--  TODO Patric vérifie celui la stp-->
 
+    <ajkmguifgvqorudgvùhm!>
+    
+    
+    
 <body>
 
 <!-- Navigation -->
