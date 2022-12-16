@@ -23,13 +23,6 @@
 
 </head>
     
-    
-    
-    
-
-    
-    
-    
 <body>
 
 <!-- Navigation -->
