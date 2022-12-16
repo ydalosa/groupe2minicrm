@@ -26,10 +26,7 @@
     
     
     
-    
-<!--  TODO Patric vérifie celui la stp-->
 
-    <ajkmguifgvqorudgvùhm!>
     
     
     
